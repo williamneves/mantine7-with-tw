@@ -12,6 +12,7 @@
     "@mantine/code-highlight": "^7.1.2",
     "@mantine/core": "^7.1.2",
     "@mantine/hooks": "^7.1.2",
+    "@tabler/icons-react": "^2.38.0",
     "@types/node": "20.8.2",
     "@types/prettier": "^3.0.0",
     "@types/react": "18.2.25",
