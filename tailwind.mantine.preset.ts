@@ -2,6 +2,9 @@ import { Config } from "tailwindcss";
 
 const mantineTailwind: Config = {
   darkMode: ["class", '[data-mantine-color-scheme="dark"]'],
+  corePlugins: {
+    preflight: false,
+  },
   theme: {
     extend: {
       screens: {
