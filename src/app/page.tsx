@@ -20,40 +20,40 @@ const highlight1 = `<Paper p={{ base: "md", md: "lg" }} shadow="md">
 </Paper>`;
 
 const highlight2 = `<Paper
-	classNames={{
-		root: "group bg-mtn-primary-light-color text-light-grape-filled px-mtn-md py-mtn-lg my-mtn-xl rounded-lg text-white italic shadow-sm hover:shadow-mtn-lg cursor-pointer transition duration-150 ease-in-out",
-	}}
+  classNames={{
+    root: "group bg-mtn-primary-light-color text-light-grape-filled px-mtn-md py-mtn-lg my-mtn-xl rounded-lg text-white italic shadow-sm hover:shadow-mtn-lg cursor-pointer transition duration-150 ease-in-out",
+  }}
 >
-	<Text
-		classNames={{
-			root: "group-hover:underline",
-		}}
-	>
-		This component is a mixin with tailwind class
-	</Text>
+  <Text
+    classNames={{
+      root: "group-hover:underline",
+    }}
+  >
+    This component is a mixin with tailwind class
+  </Text>
 </Paper>`;
 
 const highlight3 = `<Paper
-	p={{ base: "md", md: "lg" }}
-	shadow="md"
+  p={{ base: "md", md: "lg" }}
+  shadow="md"
 >
-	<p className="text-light-text text-sm font-semibold">
-		This a Mantine Input component with floating label by Tailwind
-	</p>
-	<TextInput
-		labelProps={{ "data-floating": floating }}
-		onFocus={() => setFocused(true)}
-		onBlur={() => setFocused(false)}
-		value={value}
-		onChange={(event) => setValue(event.currentTarget.value)}
-		classNames={{
-			root: "relative mt-[12px]",
-			input: "border-b-1",
-			label:
-				"absolute z-10 pointer-events-none top-[7px] left-[12px] text-light-placeholder text-sm transition-all duration-100 ease-in data-[floating=true]:translate-y-[-20px] text-base data-[floating=true]:text-xs data-[floating=true]:text-mtn-primary-filled-hover bg-transparent data-[floating=true]:bg-white px-0 data-[floating=true]:px-1 data-[floating=true]:left-[8px]",
-		}}
-		label="Floating label"
-	/>
+  <p className="text-light-text text-sm font-semibold">
+    This a Mantine Input component with floating label by Tailwind
+  </p>
+  <TextInput
+    labelProps={{ "data-floating": floating }}
+    onFocus={() => setFocused(true)}
+    onBlur={() => setFocused(false)}
+    value={value}
+    onChange={(event) => setValue(event.currentTarget.value)}
+    classNames={{
+      root: "relative mt-[12px]",
+      input: "border-b-1",
+      label:
+        "absolute z-10 pointer-events-none top-[6px] data-[floating=true]:top-[8px] left-[12px] data-[floating=true]:left-[8px] text-light-placeholder text-sm transition-all duration-75 ease-in-out data-[floating=true]:translate-y-[-20px] text-base data-[floating=true]:text-xs data-[floating=true]:text-mtn-primary-filled-hover bg-transparent data-[floating=true]:bg-white dark:data-[floating=true]:bg-mtn-dark-6 data-[floating=true]:bg-mtn-light-body px-0 data-[floating=true]:px-1 data-[floating=true]:left-[8px]",
+    }}
+    label="Floating label"
+  />
 </Paper>`;
 
 export default function Home() {
@@ -101,7 +101,7 @@ export default function Home() {
                   root: "relative mt-[12px]",
                   input: "border-b-1",
                   label:
-                    "absolute z-10 pointer-events-none top-[7px] left-[12px] text-light-placeholder text-sm transition-all duration-100 ease-in data-[floating=true]:translate-y-[-20px] text-base data-[floating=true]:text-xs data-[floating=true]:text-mtn-primary-filled-hover bg-transparent data-[floating=true]:bg-mtn-light-body px-0 data-[floating=true]:px-1 data-[floating=true]:left-[8px]",
+                    "absolute z-10 pointer-events-none top-[6px] data-[floating=true]:top-[8px] left-[12px] data-[floating=true]:left-[8px] text-light-placeholder text-sm transition-all duration-75 ease-in-out data-[floating=true]:translate-y-[-20px] text-base data-[floating=true]:text-xs data-[floating=true]:text-mtn-primary-filled-hover bg-transparent data-[floating=true]:bg-white dark:data-[floating=true]:bg-mtn-dark-6 data-[floating=true]:bg-mtn-light-body px-0 data-[floating=true]:px-1 data-[floating=true]:left-[8px]",
                 }}
                 label="Floating label"
               />
