@@ -1,20 +1,28 @@
 "use client";
 
-import { ActionIcon, useMantineColorScheme } from "@mantine/core";
+import {
+  ActionIcon,
+  useMantineColorScheme,
+  useComputedColorScheme,
+} from "@mantine/core";
 import { IconSun, IconMoon } from "@tabler/icons-react";
 
 export function ColorSchemeToggle() {
-  const { setColorScheme, colorScheme } = useMantineColorScheme();
+  const { setColorScheme } = useMantineColorScheme();
+  const computedColorScheme = useComputedColorScheme("light", {
+    getInitialValueInEffect: true,
+  });
 
   const handleToggleScheme = () => {
-    if (colorScheme === "dark") return setColorScheme("light");
+    if (computedColorScheme === "dark") return setColorScheme("light");
 
     return setColorScheme("dark");
   };
 
   return (
     <ActionIcon variant={"outline"} onClick={handleToggleScheme}>
-      {colorScheme === "dark" ? <IconSun size={18} /> : <IconMoon size={18} />}
+      <IconSun className="hidden dark:block" size={18} />
+      <IconMoon className="block dark:hidden" size={18} />
     </ActionIcon>
   );
 }

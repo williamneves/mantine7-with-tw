@@ -61,7 +61,7 @@ export default function Home() {
   const [focused, setFocused] = useState(false);
   const floating = focused || value.length > 0 || undefined;
   return (
-    <Box className="bg-gray-200" mih={"100vh"} miw={"100vw"}>
+    <Box className="bg-gray-200 dark:bg-mtn-dark-8" mih={"100vh"} miw={"100vw"}>
       <Container size="xs">
         <Stack py={"xl"}>
           <Group justify={"space-between"}>
