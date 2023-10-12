@@ -2,5 +2,14 @@
 @import "mantine-highlight";
 @import "tailwindcss/base";
 
+@import "../fonts/GreycliffCF/styles.css";
+
 @tailwind components;
 @tailwind utilities;
+
+/* :root[data-mantine-color-scheme="dark"] {
+	--mantine-color-default-border: #373a40;
+}
+:root[data-mantine-color-scheme="light"] {
+	--mantine-color-default-border: #ced4da;
+} */
